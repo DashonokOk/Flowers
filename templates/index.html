@@ -1,0 +1,26 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Поиск похожих растений</title>
+            <style>
+                body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+                h1 { color: #2e8b57; }
+                .upload-box { border: 2px dashed #ccc; padding: 20px; text-align: center; margin: 20px 0; }
+                .btn { background: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+                .results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; }
+                .result-item { border: 1px solid #ddd; padding: 10px; text-align: center; }
+                .result-item img { max-width: 100%; height: 150px; object-fit: cover; }
+            </style>
+        </head>
+        <body>
+            <h1>Поиск похожих растений</h1>
+            <div class="upload-box">
+                <form action="/search" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" required>
+                    <button type="submit" class="btn">Найти похожие цветы</button>
+                </form>
+            </div>
+        </body>
+        </html>
+        
